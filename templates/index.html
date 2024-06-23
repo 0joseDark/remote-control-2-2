@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPIO Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <h1>Controle de GPIO</h1>
+    <div>
+        <button class="button" style="position: absolute; left: 50%; transform: translateX(-50%);" 
+                onmousedown="toggle(17, 'on')" onmouseup="toggle(17, 'off')">↑</button>
+        <button class="button" style="position: absolute; left: 20%; transform: translateX(-50%);" 
+                onmousedown="toggle(27, 'on')" onmouseup="toggle(27, 'off')">←</button>
+        <button class="button" style="position: absolute; left: 80%; transform: translateX(-50%);" 
+                onmousedown="toggle(22, 'on')" onmouseup="toggle(22, 'off')">→</button>
+        <button class="button" style="position: absolute; left: 50%; top: 150px; transform: translateX(-50%);" 
+                onmousedown="toggle(18, 'on')" onmouseup="toggle(18, 'off')">↓</button>
+    </div>
+    <div id="hex-display">Valor Hex: 0x0</div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* static/main.css */
+
+.button {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 20px;
+}
+.button:active {
+    background-color: lightgreen;
+}
+#hex-display {
+    font-size: 24px;
+    margin: 20px;
+}
